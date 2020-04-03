@@ -1,0 +1,3 @@
+C:/Users/marci/Desktop/Programowanie cwiczenia/Zadania/5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marci/Desktop/Programowanie cwiczenia/Zadania/5/cmake-build-debug/CMakeFiles/5.dir
+C:/Users/marci/Desktop/Programowanie cwiczenia/Zadania/5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
