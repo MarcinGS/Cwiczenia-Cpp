@@ -1,0 +1,3 @@
+C:/Users/WSTI/Desktop/C++  sem 2/Lab 2/2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/WSTI/Desktop/C++  sem 2/Lab 2/2/cmake-build-debug/CMakeFiles/2.dir
+C:/Users/WSTI/Desktop/C++  sem 2/Lab 2/2/cmake-build-debug/CMakeFiles/edit_cache.dir
