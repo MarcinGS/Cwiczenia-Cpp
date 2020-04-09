@@ -64,7 +64,7 @@ void reverse_array(double tab[], int n) {
         rev_tab[j] = tab[i];
     }
 
-    //kopiowanie odwruconej tablicy do oryginalnej
+    //kopiowanie odwroconej tablicy do oryginalnej
     for(int i = 0; i < n; i++){
         ptab[i] = rev_tab[i];
     }

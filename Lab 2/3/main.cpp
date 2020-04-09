@@ -11,12 +11,25 @@ using namespace std;
 
 bool strcmp(char *tekst_1, char *tekst_2){
 
+    //Wykonuje poki znaki sa takiesame
+    while(*tekst_1 == *tekst_2){
+
+        //Zwraca true jak osiagnie znak konca ciagu
+        if(*tekst_1 == '\0')
+            return true;
+
+            //Jezeli nie wskaznik na kolejny znak
+            tekst_1++;
+            tekst_2++;
+    }
+    return false;
+
 }
 
 int main() {
 
-    char text1[] = {"abcdefg"};
-    char text2[] = {"abclef"};
+    char text1[] = {"abcde"};
+    char text2[] = {"abcde"};
 
     cout << strcmp(text1,text2) << "<== Zwraca " ;
     return 0;
