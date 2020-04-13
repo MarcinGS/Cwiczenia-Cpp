@@ -11,8 +11,8 @@ char *strupr(char *t){
     char *ptr_t = t; //Wskaznik na pierwszą wartosc ciagu
 
     while(*ptr_t != '\0'){                  //Sprawdza do znaku konca ciagu
-        if(*ptr_t > 64 && *ptr_t < 91)      //Jezeli mala litera(ASCII od 65 do 90)
-            *ptr_t += 32;                   //Zmiana na duza (z "A" do "a" jest 32 pozycje)
+        if(*ptr_t > 96 && *ptr_t < 123)     //Jezeli mala litera(ASCII od 97 do 122)
+            *ptr_t -= 32;                   //Zmiana na duza (z "A" do "a" jest 32 pozycje)
 
         ptr_t++;                            //Wskaznik na nastepny znak w ciagu
     }

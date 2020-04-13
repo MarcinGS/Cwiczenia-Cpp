@@ -17,6 +17,7 @@ int strchr(char *tekst, char znak){
     return i;
 }
 
+
 const char *strchr(char const *tekst, char znak) {
     char const *ptr = nullptr;
 
@@ -38,7 +39,7 @@ int main() {
 
     cout << strchr(tab,'c') << endl;
 
-    char const *pznak = strchr(tab2,'b');
+    char const *pznak = strchr(tab2,'e');
     cout << *pznak;
     pznak = nullptr;
 
