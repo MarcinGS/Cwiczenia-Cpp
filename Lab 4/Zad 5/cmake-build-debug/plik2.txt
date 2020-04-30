@@ -1,0 +1,2 @@
+wyraz1 wyraz2 wyraz3
+wyraz4 wyraz5 wyraz6

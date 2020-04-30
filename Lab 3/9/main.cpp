@@ -2,31 +2,18 @@
 * 9. Zaimplementuj Szyfr Cezara: kodowanie i dekodowanie *
 *********************************************************/
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
-char *koduj() {
-    string input;
-    int key = 0;
+void koduj(char *text, int key) {
 
-    cout << "Wprowadz informacje do zakodowania: ";
-    getline(cin, input);
-    cout << "Podaj kod szyfru od -26 liter w LEWO do 26 liter w PRAWO :" << endl;
-    cin >> key;
-
-    transform(input.begin(), input.end(), input.begin(), ::tolower);   //Zmiana wszystkiego na male litery
-
-    //Przepisuje string do tablicy char
-    char *pinput = new char[input.length()];
+    char *pinput = text;
     int i = 0;
-    for (; i < input.length(); i++) {
-        *(pinput + i) = input[i];
-    }
-    *(pinput + i) = '\0';
+    while(*(pinput + i) != '\0')
+        i++;
 
     if (key >= -26 && key <= 26) {
-        if (key >= 0)
+        if (key >= 0)                               //Dla dodatnich pozycji
             //Dla kazdej litery tekstu
             for (int j = 0; j < i; j++) {
                 if (*(pinput + j) + key <= 'z')     //Jezeli przesuniecie miesci sie w zakresie alfabetu (ASCII)
@@ -34,18 +21,50 @@ char *koduj() {
                 else
                     *(pinput + j) += (key - 26);    //Jezeli wychodzi poza zakres (poza Z) odejmujemy 26 pozycji
             }
+        else                                        //Dla ujemnych pozycji
+            for (int j = 0; j < i; j++) {
+                if (*(pinput + j) + key >= 'a')     //Jezeli miejsci sie w zakresie
+                    *(pinput + j) += key;
+                else
+                    *(pinput + j) += (key + 26);    //Jezeli nie to dodajemy 26 pozycji
+            }
+    }
+}
+
+void odkoduj(char *text, int key){
+
+    char *pinput = text;
+    int i = 0;
+    while(*(pinput + i) != '\0')
+        i++;
+
+    if (key >= -26 && key <= 26) {
+        if (key >= 0)
+            for (int j = 0; j < i; j++) {
+                if (*(pinput + j) - key <= 'z')
+                    *(pinput + j) -= key;
+                else
+                    *(pinput + j) += (key + 26);
+            }
         else
             for (int j = 0; j < i; j++) {
                 if (*(pinput + j) + key >= 'a')
                     *(pinput + j) += key;
                 else
-                    *(pinput + j) += (key + 26);
+                    *(pinput + j) += (key - 26);
             }
     }
-    return pinput;
 }
+
 int main() {
 
-    cout << koduj();
+    char tekst[] = {"marcin"};
+
+    koduj(tekst,2);
+    cout << "Zakodowany tekst: " << tekst << endl;
+
+    odkoduj(tekst,2);
+    cout << "Odkodowana wiadomosc: " << tekst;
+
     return 0;
 }
