@@ -1,43 +1,45 @@
+/********************************************************************************************
+* 5. Napisz funkcję, która w każdej linii pliku tekstowego zastępuje wszystkie wystąpienia  *
+* zadanego ciągu znaków innym ciągiem znaków.                                               *
+* Nazwa pliku, słowo zastępowane oraz zastępujące powinny być kolejnymi parametrami funkcji.*
+********************************************************************************************/
+
 #include <iostream>
 #include <fstream>
-#include <cstring>
-#include <string>
 
 using namespace std;
 
 void word_replace(string target_file, string s_word, string r_word){
 
-    /* String porownywaz zapamietywac pierwsza pozycje lini pos i zapisywac*/
-    const int MAX_SIZE = 100;
-    string zdanie;
-    char tab[MAX_SIZE];
-    long int pos = 0;
+    string tekst;   //Zmienna na tekst
+    int pos = 0;        //zmienna na pozycje szukanego wyrazu
 
-    fstream file;
-    file.open(target_file, ios::in|ios::out);
+    fstream infile(target_file, ios::in);   //Otwarcie pliku do odczytu
 
-    if(file){
-        while(getline(file, zdanie)){
-            cout << zdanie << endl;
-            int i = 0;
-            int j = 0;
-            while(zdanie[i]){
-                if(zdanie[i] == s_word[j]) {
-                    i++;
-                    j++;
-                }
+    //Jeśli otworzy wykonuje dzialania
+    if(infile) {
+       getline(infile,tekst,'\0');  //Pobiera tresc tekstu
+        pos = tekst.find(s_word);               //Wyszukuje pozycje wystapienia szukanego wyrazu
 
-            }
+        //Jeśli funkcja .find() znajdzie wyraz
+        if(pos != string::npos) {
+           tekst.erase(pos, s_word.size());   //Usowa szukany
+           tekst.insert(pos, r_word);           //Wstawia nowy
 
+           infile.close();         //Zamyka plik do odczytu
 
-
+           fstream outfile(target_file,ios::out);      //Otwiera plik do zapisu
+           outfile << tekst;                           //Zapis
+           outfile.close();                            //Zamkniecie pliku do zapisu
         }
-        file.close();
+        else {
+            cout << "Nie znaleziono" << endl;
+        }
+        infile.close();
     }
     else
         cout << "Blad otwarcia pliku!";
 }
-
 
 int main() {
 

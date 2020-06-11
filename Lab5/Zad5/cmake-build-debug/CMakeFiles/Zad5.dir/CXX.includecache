@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/marci/Desktop/c++/Lab5/Zad5/main.cpp
+C:/Users/WSTI/Desktop/C++  sem 2/Lab5/Zad5/main.cpp
 iostream
+-
+cstdio
+-
+string
 -
 

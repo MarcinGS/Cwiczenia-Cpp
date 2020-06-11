@@ -1,3 +1,14 @@
+/***********************************************************************************************************************
+* 4. Począwszy od bieżącego semestru studentom zarejestrowanym w USOS nasz wydziałowy barek sprzedaje dania na kredyt. *
+* Następnie przesyła u-mailem plik z rachunkiem w formacie takim, jak w poniższym przykładzie:                         *
+* sałata księżycowa 2.50                                                                                               *
+* czarodziejski filet 7.20                                                                                             *
+* 2 konserwy brandenburskie 6.33                                                                                       *
+* napój energetyczny 10.5 13.70                                                                                        *
+* Cena jest ostatnią pozycją w linii. Napisz funkcję obliczającą na podstawie tego pliku całkowitą należność.          *
+* Plik z rachunkiem powinien być przekazany jako parametr funkcji, a wynik zwracany przez funkcję.                     *
+***********************************************************************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>

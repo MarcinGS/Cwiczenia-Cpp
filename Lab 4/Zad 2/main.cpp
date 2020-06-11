@@ -1,3 +1,9 @@
+/********************************************************************************************************************
+* 2. Napisz program definiujący zmienną typu TData (struktura) oraz wskaźnik do zmiennej typu TData.                *
+* Napisz funkcję która jako parametr przyjmuje wskaźnik do struktury i wczytuje z klawiatury wartości pól zmiennej. *
+* Zastosuj wskaźnik i operator adresu (nie stosuj operatora new).                                                   *
+********************************************************************************************************************/
+
 #include <iostream>
 
 using namespace std;

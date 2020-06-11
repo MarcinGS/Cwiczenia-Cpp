@@ -1,3 +1,13 @@
+/******************************************************************************************************
+* 3. Napisz funkcję palindrom sprawdzającą, czy dany łańcuch typu string zapisany w pliku tekstowym,  *
+* którego nazwa jest przekazywana jako parametr do funkcji, jest palindromem.                         *
+* Palindrom to napis, który czytany po literce od tyłu jest taki sam, jak czytany od przodu.          *
+* Przy tym znaczenie maja tylko występujące w napisie litery, zaś pozostałe znaki,                    *
+* jak cyfry, znaki interpunkcyjne i znaki białe, są ignorowane.                                       *
+* Poza tym nie ma znaczenia wielkość liter.                                                           *
+* Na przykład palindromem jest zdanie Ile Roman ładny dyndał na moreli.                               *
+*******************************************************************************************************/
+
 #include <iostream>
 #include <string>
 #include <algorithm>

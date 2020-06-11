@@ -1,3 +1,8 @@
+/***********************************************************************************************************
+* 1. Napisz funkcję, która wczytuje z klawiatury ciąg liczb całkowitych. Liczba zero kończy wczytywanie.   *
+* Wczytane liczby zapisz do pliku tekstowego liczby.txt. Liczby oddziel znakiem spacji.                    *
+***********************************************************************************************************/
+
 #include <iostream>
 #include <fstream>
 
