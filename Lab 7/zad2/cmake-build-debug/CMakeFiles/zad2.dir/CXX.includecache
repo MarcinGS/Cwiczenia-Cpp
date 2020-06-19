@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/WSTI/Desktop/C++  sem 2/Lab 7/zad2/main.cpp
+C:/Users/marci/Desktop/c++/Lab 7/zad2/main.cpp
 iostream
 -
-stdexcept
+cmath
 -
 

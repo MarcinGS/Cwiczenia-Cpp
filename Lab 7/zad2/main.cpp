@@ -6,17 +6,40 @@
  *********************************************************************************************/
 
 #include <iostream>
-#include <stdexcept>
+#include <cmath>
 
 using namespace std;
 
 void rownanieKwadratowe(int a, int b, int c){
+    int    delta,
+           x;
+    double x1,
+           x2;
+
     if(a == 0)
         throw ( "Wspolczynnik \"a\" nie moze byc zerem ");
+    else{
+        delta = (b*b) - 4*(a*c);
+        cout << "Delta = " << delta << endl;
+    }
+
+    if(delta > 0){
+        x1 = (-b - sqrt(delta)) / (2 * a);
+        x2 = (-b + sqrt(delta)) / (2 * a);
+        cout << "x1: " << x1 << endl;
+        cout << "x2: " << x2 << endl;
+    }
+    else if (delta == 0) {
+        x = -b / (2 * a);
+        cout << "x: " << x << endl;
+    }
+    else if (delta < 0)
+        throw ("Rownanie nie ma rozwiazan!");
+
 }
 int main() {
     try {
-        rownanieKwadratowe(0, 1, 2);
+        rownanieKwadratowe(-1, 2, -3);
     }
     catch (const char* msg){
         cout << msg;
