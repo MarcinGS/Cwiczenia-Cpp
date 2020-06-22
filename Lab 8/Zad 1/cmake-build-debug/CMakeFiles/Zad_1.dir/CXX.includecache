@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/WSTI/Desktop/C++  sem 2/Lab 8/Zad 1/main.cpp
+iostream
+-
+fstream
+-
+ctime
+-
+
