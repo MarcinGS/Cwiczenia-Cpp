@@ -1,0 +1,3 @@
+C:/Users/marci/Desktop/c++/Lab 7/ble/cmake-build-debug/CMakeFiles/ble.dir
+C:/Users/marci/Desktop/c++/Lab 7/ble/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marci/Desktop/c++/Lab 7/ble/cmake-build-debug/CMakeFiles/rebuild_cache.dir

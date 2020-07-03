@@ -1,0 +1,44 @@
+Czym jest inkrementacja:
+A. Zmniejszenie wartosci o 1
+B. Zwiekszenie wartosci o n, gdzie n>=2
+C. Zwiekszenie wartosci o 1
+D. Zadne z powyzszych
+c
+Do czego odnosza sie modyfikatory public, private i protected:
+A. Dziedziczenia
+B. Przestrzeni nazw
+C. Polimorfizmu
+D. Rekurencji
+a
+Tzw. notacja duzego O uzywana jest do:
+A. Opisu zlozonosci obliczeniowej algorytmu
+B. Opisu ilosci watkow uzywanych przez program
+C. Opisu minimalnych wymagan systemowych do uruchomienia programu
+D. Mnozenia liczb binarnych
+a
+Co oznacza znak podwojnej rownosci == w jezykach pochodnych od jezyka C:
+A. Przypisania wartosci zmiennej
+B. Porownania wartosci zmiennych
+C. Zadne z powyzszych
+D. Podwojne przypisanie
+b
+Proces inicjalizacji zmiennej to:
+A. Przypisanie wartosci poczatkowej zmiennej
+B. Utworzenie drugiej zmiennej, o takiej samej nazwie co pierwsza
+C. Uruchomienie kompilatora
+D. Zadne z powyzszych
+a
+Strumienie w programowaniu uzywane sa do:
+A. Wprowadzania lub wyprowadzania (wypisywania) wartosci do i z programu
+B. Szybkiej analizy dzialania programu
+C. Okreslania zlozonosci pamieciowej programu
+D. Zadne z powyzszych
+a
+Znakowy typ danych to:
+A. char
+B. string
+C. int
+D. arch
+a
+
+
